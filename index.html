@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Cat Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cat Generator</h1>
+      <span id="cat-name">Curt the Default Cat</span>
+    </header>
+    <section class="section-container">
+      <section class="column" id="left-col">
+        <section class="item">
+          <span>Choose your Breed!</span>
+        </section>
+        <section class="item">
+          <select class="breeds">
+            <option value="starter" selected>Select a Breed</option>
+          </select>
+        </section>
+        <section class="item">
+          <section class="img-container">
+            <section class="container">
+              <div>🐈🐈🐈🐈🐈🐈🐈</div>
+              <img
+                class="cat-img"
+                id="cat_image"
+                src="http://placekitten.com/400/400"
+                alt="Picture of Kitten"
+              />
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="column" id="right-col">
+        <section class="item">
+          <span>Kittie Kharacteristics</span>
+          <ul id="ul">
+            <li id="MF">S: Male/Female</li>
+            <li id="age">Age: Age Goes Here</li>
+            <li id="likes">Likes: Likes Go Here</li>
+            <li id="dislikes">Dislikes: Dislikes Go Here</li>
+            <li id="fun-fact">Additional Info: Info Goes Here</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
