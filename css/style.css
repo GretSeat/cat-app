@@ -1,12 +1,13 @@
-html {
+body {
   font-size: 2rem;
   font-family: sans-serif;
   background: linear-gradient(lightblue, cyan);
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 select {
@@ -16,7 +17,6 @@ select {
   display: flex;
   flex-direction: column;
   padding: 0 10vw;
-  border: 1px solid black;
 }
 .column {
   flex: 1;
@@ -31,12 +31,7 @@ span {
   text-decoration: underline;
   font-size: 1.3rem;
 }
-#cat-name {
-  font-size: 2rem;
-  text-decoration: none;
-}
-#left-col {
-  border: 1px solid red;
+#top-col {
   text-align: center;
 }
 #ul {
@@ -45,6 +40,12 @@ span {
 
 #description,
 #likesKids,
-#likesDogs {
+#likesDogs,
+#likesStrangers,
+.catBreedSpan,
+.catBreedP {
   font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
 }

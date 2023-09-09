@@ -4,6 +4,7 @@ const CAT_IMG_URL = "https://api.thecatapi.com/v1/images/search?breed_ids=";
 const select = document.querySelector(".breeds");
 const catImg = document.querySelector(".cat-img");
 const desc = document.querySelector("#description"); //variable to hold description id
+const catBreedName = document.querySelector(".catBreedSpan");
 
 // Make Drop Down List of Breed
 fetch(BREEDS_URL)
@@ -26,10 +27,11 @@ fetch(BREEDS_URL)
       const selectedCatInfoObject = breedsArray.find(
         (catBreed) => catBreed.id === catBreedId
       );
+      catBreedName.innerText = selectedCatInfoObject.name; // Add Breed Name to Kharacteristics Span
       desc.innerText = selectedCatInfoObject.description; // Add Description to the Description Object
-      likesKids(selectedCatInfoObject);
-      likesDogs(selectedCatInfoObject);
-      console.log(selectedCatInfoObject);
+      likesKids(selectedCatInfoObject); // Function to See if they like kids
+      likesDogs(selectedCatInfoObject); // Function to see if they like dogs
+      likesStrangers(selectedCatInfoObject); // Function to see how they react around strangers
     });
   });
 
@@ -82,5 +84,29 @@ const likesDogs = (selectedCatInfoObject) => {
       break;
     default:
       document.querySelector("#likesDogs").innerText = "A Dog's Best Friend!";
+  }
+};
+
+const likesStrangers = (selectedCatInfoObject) => {
+  switch (selectedCatInfoObject.child_friendly) {
+    case 1:
+      document.querySelector("#likesStrangers").innerText =
+        "I will not come out of hiding for new people!";
+      break;
+    case 2:
+      document.querySelector("#likesStrangers").innerText =
+        "Nope. I'm hiding when someone new comes inside";
+      break;
+    case 3:
+      document.querySelector("#likesStrangers").innerText =
+        "I'm hesitant around anyone in my house";
+      break;
+    case 4:
+      document.querySelector("#likesStrangers").innerText =
+        "I'll come out to greet people, after some time";
+      break;
+    default:
+      document.querySelector("#likesStrangers").innerText =
+        "I love meeting new people!!";
   }
 };
