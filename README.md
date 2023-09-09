@@ -22,13 +22,3 @@ The main part of this project is vanilla JavaScript with a little bit of HTML, a
 ## Lessons Learned:
 
 This project helped me dig deeper into the dismantling of APIs and how to pull information from them. I was stuck for a bit with the idea of how to grab both images, and text at the same time, which resulted in multiple fetch requests instead of using one fetch, and pulling different pieces of data from the response.
-
-## Examples:
-
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
