@@ -14,8 +14,9 @@ select {
 }
 .section-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0 10vw;
+  border: 1px solid black;
 }
 .column {
   flex: 1;
@@ -30,13 +31,20 @@ span {
   text-decoration: underline;
   font-size: 1.3rem;
 }
-#dog-name {
+#cat-name {
   font-size: 2rem;
   text-decoration: none;
 }
 #left-col {
+  border: 1px solid red;
   text-align: center;
 }
 #ul {
   text-align: left;
+}
+
+#description,
+#likesKids,
+#likesDogs {
+  font-size: 0.8rem;
 }

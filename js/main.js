@@ -26,27 +26,61 @@ fetch(BREEDS_URL)
       const selectedCatInfoObject = breedsArray.find(
         (catBreed) => catBreed.id === catBreedId
       );
-      desc.innerText = selectedCatInfoObject.description;
-      desc.innerText = breedsArray.find(
-        (catBreed) => catBreed.id === catBreedId
-      ).description;
-      indoorOrOutdoor(selectedCatInfoObject);
+      desc.innerText = selectedCatInfoObject.description; // Add Description to the Description Object
+      likesKids(selectedCatInfoObject);
+      likesDogs(selectedCatInfoObject);
+      console.log(selectedCatInfoObject);
     });
   });
 
-const getCatImg = (url) => {
+function getCatImg(url) {
   fetch(url) // fetching from 'selectedImgUrl'
     .then((res) => res.json())
     .then((data) => {
       catImg.src = data[0].url;
     });
+}
+
+const likesKids = (selectedCatInfoObject) => {
+  switch (selectedCatInfoObject.child_friendly) {
+    case 1:
+      document.querySelector("#likesKids").innerText =
+        "I will probably eat your kids";
+      break;
+    case 2:
+      document.querySelector("#likesKids").innerText =
+        "Probably shouldn't be around Children";
+      break;
+    case 3:
+      document.querySelector("#likesKids").innerText =
+        "Is Okay around Children";
+      break;
+    case 4:
+      document.querySelector("#likesKids").innerText =
+        "Does Great with Children";
+      break;
+    default:
+      document.querySelector("#likesKids").innerText = "Purrrfect for Kids!";
+  }
 };
 
-const indoorOrOutdoor = (selectedCatInfoObject) => {
-  console.log(selectedCatInfoObject);
-  if (selectedCatInfoObject.indoor === 0) {
-    document.querySelector("#indoorOrOutdoor").innerText = "Outdoor";
-  } else {
-    document.querySelector("#indoorOrOutdoor").innerText = "Indoor";
+const likesDogs = (selectedCatInfoObject) => {
+  switch (selectedCatInfoObject.dog_friendly) {
+    case 1:
+      document.querySelector("#likesDogs").innerText = "I hate dogs";
+      break;
+    case 2:
+      document.querySelector("#likesDogs").innerText =
+        "Yeah, no, dogs aren't my thing";
+      break;
+    case 3:
+      document.querySelector("#likesDogs").innerText = "Dogs are meh";
+      break;
+    case 4:
+      document.querySelector("#likesDogs").innerText =
+        "Might be friends with your dog";
+      break;
+    default:
+      document.querySelector("#likesDogs").innerText = "A Dog's Best Friend!";
   }
 };
