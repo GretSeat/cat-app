@@ -2,8 +2,6 @@ body {
   font-size: 2rem;
   font-family: sans-serif;
   background: linear-gradient(lightblue, cyan);
-  height: 100vh;
-  overflow: hidden;
 }
 
 header {
