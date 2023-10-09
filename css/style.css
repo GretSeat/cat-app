@@ -54,7 +54,15 @@ span {
   font-weight: normal;
   margin-bottom: 0.2rem;
 }
+.copyrightLink {
+  text-decoration: none;
+  color: black;
+}
+.copyrightLink:hover {
+  color: blue;
+}
 footer {
   font-size: 1rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
