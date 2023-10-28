@@ -42,7 +42,7 @@ function getCatImg(url) {
       catImg.src = data[0].url;
     });
 }
-
+// Function for liking kids
 const likesKids = (selectedCatInfoObject) => {
   switch (selectedCatInfoObject.child_friendly) {
     case 1:
@@ -65,7 +65,7 @@ const likesKids = (selectedCatInfoObject) => {
       document.querySelector("#likesKids").innerText = "Purrrfect for Kids!";
   }
 };
-
+// Function for Liking Dogs
 const likesDogs = (selectedCatInfoObject) => {
   switch (selectedCatInfoObject.dog_friendly) {
     case 1:
@@ -86,7 +86,7 @@ const likesDogs = (selectedCatInfoObject) => {
       document.querySelector("#likesDogs").innerText = "A Dog's Best Friend!";
   }
 };
-
+// Function for Liking Strangers
 const likesStrangers = (selectedCatInfoObject) => {
   switch (selectedCatInfoObject.child_friendly) {
     case 1:
