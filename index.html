@@ -31,24 +31,24 @@
     />
     <title>Cat Generator</title>
   </head>
-  <body>
-    <div class="card border-dark mx-auto my-5">
+  <body class="pb-1">
+    <div class="card border-dark mx-auto my-4 shadow">
       <header class="card-header">
-        <h1 class="card-title">Is this Cat Breed for YOU?</h1>
-        <p class="card-subtitle">
+        <h1 class="card-title text-center">Is this Cat Breed for YOU?</h1>
+        <p class="card-subtitle text-center">
           Let's face it, we all love cats. But do cats love you?
         </p>
       </header>
       <section class="card-body">
-        <section>
-          <section>
+        <section class="text-center">
+          <div class="pb-2">
             <span
               >Select a breed below, and find out if it's right for your
               home!</span
             >
-          </section>
+          </div>
           <!-- BREEDS DROP DOWN LIST -->
-          <section class="mx-auto">
+          <section class="pb-3">
             <select
               type="button"
               class="btn btn-secondary dropdown-toggle breeds-drop-down"
@@ -61,46 +61,41 @@
             </select>
           </section>
           <section>
-            <section>
-              <section>
-                <img
-                  class="card-img-top w-100 p-3 img-fluid img-thumbnail rounded d-block"
-                  id="cat_image"
-                  src="http://placekitten.com/400/400"
-                  alt="Picture of Kitten"
-                />
-              </section>
-            </section>
+            <img
+              class="card-img-top w-100 p-3 img-fluid img-thumbnail rounded d-block"
+              id="cat_image"
+              src="http://placekitten.com/800/800"
+              alt="Picture of Kitten"
+            />
           </section>
         </section>
         <section>
-          <section>
-            <p class="catBreedP card-title">
-              <span class="catBreedSpan">Kittie</span> Kharacteristics
-            </p>
-            <ul class="list-group list-group-flush" id="ul">
-              <li class="list-group-item" id="description">
-                A description about this breed
-              </li>
-              <li class="list-group-item" id="likesKids">
-                Does this cat like children?
-              </li>
-              <li class="list-group-item" id="likesDogs">
-                How does this cat do with dogs?
-              </li>
-              <li class="list-group-item" id="likesStrangers">
-                How will this cat feel about new people in your house?
-              </li>
-            </ul>
-          </section>
+          <p class="catBreedP card-title text-center fs-2">
+            <span class="catBreedSpan">Kittie</span> Kharacteristics
+          </p>
+          <ul class="list-group list-group-flush" id="ul">
+            <li class="list-group-item" id="description">
+              A description about this breed
+            </li>
+            <li class="list-group-item" id="likesKids">
+              Does this cat like children?
+            </li>
+            <li class="list-group-item" id="likesDogs">
+              How does this cat do with dogs?
+            </li>
+            <li class="list-group-item" id="likesStrangers">
+              How will this cat feel about new people in your house?
+            </li>
+          </ul>
         </section>
       </section>
-      <footer class="card-footer text-muted">
-        &copy; Copyright
-        <a href="https://github.com/GretSeat/" target="_blank"
-          >Garrett Stewart</a
+      <footer class="card-footer text-muted text-center">
+        <span
+          >&copy; Copyright
+          <a href="https://github.com/GretSeat/" target="_blank"
+            >Garrett Stewart </a
+          >2023</span
         >
-        2023
       </footer>
     </div>
     <script src="/js/main.js"></script>
