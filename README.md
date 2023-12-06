@@ -14,10 +14,9 @@ The main part of this project is vanilla JavaScript with a little bit of HTML fo
 
 ## Optimizations
 
-- It could definitely look better, in the future I'd like to clean up the design of the page to make it more appealing.[^1]
-- I would love to add more characteristics for each breed.[^2]
-- Implimentation of an Overall "Is this cat right for you" based on an average of it's numbers.[^3]
-- Comparing user input vs cat characteristics, to see if this cat is good in their household based on what they have (dogs, children, doesn't like shedding, etc)[^4]
+- I would love to add more characteristics for each breed.[^1]
+- Implimentation of an Overall "Is this cat right for you" based on an average of it's numbers.[^2]
+- Comparing user input vs cat characteristics, to see if this cat is good in their household based on what they have (dogs, children, doesn't like shedding, etc)[^3]
 
 ## Lessons Learned:
 
@@ -25,7 +24,6 @@ This project helped me dig deeper into the dismantling of APIs and how to pull i
 
 I also got to experiment with Bootstrap to organize the application, and make it look like something you would see commercially.
 
-[^1]: I would enjoy adding Bootstrap or Tailwind CSS to this project to give it a more "professional" vibe.
-[^2]: (How much they shed, activity level, etc)
-[^3]: The way the information has been fetched from the catapi, each statistic is on a scale of 1-5, so I'd love to get all of the statistics and then average them to get an "overall score" for each cat.
-[^4]: I would like to include a form in the future that takes in exactly what type of characteristics an owner is looking for, and then finding those breeds of cats based on those statistics.
+[^1]: (How much they shed, activity level, etc)
+[^2]: The way the information has been fetched from the catapi, each statistic is on a scale of 1-5, so I'd love to get all of the statistics and then average them to get an "overall score" for each cat.
+[^3]: I would like to include a form in the future that takes in exactly what type of characteristics an owner is looking for, and then finding those breeds of cats based on those statistics.
