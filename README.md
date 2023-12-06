@@ -4,7 +4,7 @@ This is a project I put together, because I love cats, and wanted an application
 
 **Link to project:** https://isthisbreedforyou-catapp.netlify.app/
 
-![alt tag](/imgs/main-page.png)
+![alt tag](/imgs/main-app.jpg)
 
 ## How It's Made:
 
