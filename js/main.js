@@ -1,8 +1,8 @@
 const BASE_URL = "https://api.thecatapi.com/v1";
 const BREEDS_URL = "https://api.thecatapi.com/v1/breeds";
 const CAT_IMG_URL = "https://api.thecatapi.com/v1/images/search?breed_ids=";
-const select = document.querySelector(".breeds");
-const catImg = document.querySelector(".cat-img");
+const select = document.querySelector(".breeds-drop-down");
+const catImg = document.querySelector("#cat_image");
 const desc = document.querySelector("#description"); //variable to hold description id
 const catBreedName = document.querySelector(".catBreedSpan");
 
