@@ -32,63 +32,64 @@
     <title>Cat Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Is this Cat Breed for YOU?</h1>
-      <p>Let's face it, we all love cats. But do cats love you?</p>
-    </header>
-    <section class="section-container">
-      <section class="column" id="top-col">
-        <section class="item">
-          <span
-            >Select a breed below, and find out if it's right for your
-            home!</span
-          >
-        </section>
-        <section class="item">
-          <select class="breeds">
-            <option value="starter" selected>Select a Breed</option>
-          </select>
-        </section>
-        <section class="item">
-          <section class="img-container">
-            <section class="container">
-              <img
-                class="cat-img"
-                id="cat_image"
-                src="http://placekitten.com/400/400"
-                alt="Picture of Kitten"
-              />
+    <div class="container container-main">
+      <header class="container">
+        <h1>Is this Cat Breed for YOU?</h1>
+        <p>Let's face it, we all love cats. But do cats love you?</p>
+      </header>
+      <section class="section-container container">
+        <section class="column" id="top-col">
+          <section class="item">
+            <span
+              >Select a breed below, and find out if it's right for your
+              home!</span
+            >
+          </section>
+          <section class="item container">
+            <select class="breeds container">
+              <option value="starter" selected>Select a Breed</option>
+            </select>
+          </section>
+          <section class="item">
+            <section class="img-container">
+              <section class="container">
+                <img
+                  class="cat-img"
+                  id="cat_image"
+                  src="http://placekitten.com/400/400"
+                  alt="Picture of Kitten"
+                />
+              </section>
             </section>
           </section>
         </section>
-      </section>
-      <section class="column" id="bot-col">
-        <section class="item">
-          <p class="catBreedP">
-            <span class="catBreedSpan">Kittie</span> Kharacteristics
-          </p>
-          <ul id="ul">
-            <li id="description">A description about this breed</li>
-            <li id="likesKids">Does this cat like children?</li>
-            <li id="likesDogs">How does this cat do with dogs?</li>
-            <li id="likesStrangers">
-              How will this cat feel about new people in your house?
-            </li>
-          </ul>
+        <section class="column" id="bot-col">
+          <section class="item">
+            <p class="catBreedP">
+              <span class="catBreedSpan">Kittie</span> Kharacteristics
+            </p>
+            <ul id="ul">
+              <li id="description">A description about this breed</li>
+              <li id="likesKids">Does this cat like children?</li>
+              <li id="likesDogs">How does this cat do with dogs?</li>
+              <li id="likesStrangers">
+                How will this cat feel about new people in your house?
+              </li>
+            </ul>
+          </section>
         </section>
       </section>
-    </section>
-    <footer>
-      &copy; Copyright
-      <a
-        class="copyrightLink"
-        href="https://github.com/GretSeat/"
-        target="_blank"
-        >Garrett Stewart</a
-      >
-      2023
-    </footer>
-
+      <footer class="container">
+        &copy; Copyright
+        <a
+          class="copyrightLink"
+          href="https://github.com/GretSeat/"
+          target="_blank"
+          >Garrett Stewart</a
+        >
+        2023
+      </footer>
+    </div>
     <script src="/js/main.js"></script>
   </body>
 </html>
