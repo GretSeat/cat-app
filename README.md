@@ -8,9 +8,9 @@ This is a project I put together, because I love cats, and wanted an application
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, Bootstrap
 
-The main part of this project is vanilla JavaScript with a little bit of HTML, and a sprinkle of CSS to make it look decent. The [Cat Api](https://thecatapi.com/) was used to fetch data about different cat breeds, and plug them into the appropriate elements.
+The main part of this project is vanilla JavaScript with a little bit of HTML for structure, Bootstrap to make it look decent, and a sprinkle of CSS. The [Cat Api](https://thecatapi.com/) was used to fetch data about different cat breeds, and plug them into the appropriate elements.
 
 ## Optimizations
 
@@ -21,7 +21,9 @@ The main part of this project is vanilla JavaScript with a little bit of HTML, a
 
 ## Lessons Learned:
 
-This project helped me dig deeper into the dismantling of APIs and how to pull information from them. I was stuck for a bit with the idea of how to grab both images, and text at the same time, which resulted in multiple fetch requests instead of using one fetch, and just pulling different pieces of data from the response. I believe now after work on this project I have a much better grasp on how to handle fetch requests from Web APIs
+This project helped me dig deeper into the dismantling of APIs and how to pull information from them. I was stuck for a bit with the idea of how to grab both images, and text at the same time, which resulted in multiple fetch requests instead of using one fetch, and just pulling different pieces of data from the response. I believe now after working on this project I have a much better grasp on how to handle fetch requests from Web APIs.
+
+I also got to experiment with Bootstrap to organize the application, and make it look like something you would see commercially.
 
 [^1]: I would enjoy adding Bootstrap or Tailwind CSS to this project to give it a more "professional" vibe.
 [^2]: (How much they shed, activity level, etc)
