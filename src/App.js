@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import KittieKharacteristics from "./components/KittieKharacteristics";
+import SelectABreed from "./components/SelectABreed";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div class="card border-dark mx-auto my-4 shadow">
+        <section class="card-body">
+          <section class="text-center">
+            <section>
+              <img
+                class="card-img-top img-fluid rounded"
+                id="cat_image"
+                src="./imgs/sadkitten.jpg"
+                alt="A Cute Kitten"
+              />
+            </section>
+          </section>
+        </section>
+        <SelectABreed />
+        <KittieKharacteristics />
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
